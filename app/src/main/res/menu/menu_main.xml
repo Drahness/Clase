@@ -3,6 +3,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.clase.MainActivity">
     <item
+        android:id="@+id/buttons_item"
+        android:title="@string/action_buttons" />
+    <item
+        android:id="@+id/websites_item"
+        android:title="@string/action_web" >
+        <menu >
+            <item
+                android:id="@+id/amazon_item"
+                android:enabled="true"
+                android:title="@string/amazon" />
+            <item
+                android:id="@+id/twitch_item"
+                android:title="@string/twitch" />
+        </menu>
+    </item>
+    <item android:title="@string/action_lists" />
+    <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
         android:title="@string/action_settings"

@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Classe</string>
+    <!-- Strings for toolbar -->
+    <string name="action_buttons">Botons</string>
+    <string name="action_lists">Lista</string>
+    <string name="action_web">Llocs web</string>
+
     <string name="action_settings">Ajustos</string>
+    <string name="alert_toast" >Selecionat: %s</string>
+    <string name="alert_dialog_radios">Element selecionat: %s</string>
+    <!-- Strings buttons activity -->
+    <string name="radio_man">Home</string>
+    <string name="radio_woman">Dona</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">Primer Fragment</string>
     <string name="second_fragment_label">Segon Fragment</string>
     <string name="next">Següent</string>
     <string name="previous">Anterior</string>
 
-    <string name="title">2 Android with menus Students project</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title" translatable="false">2 Android with menus Students project</string>
     <string name="by_author">By Joan Ciscar Gregori</string>
-    <string name="author">Joan Ciscar Gregori</string>
     <string name="mainimage_contentdescription">Github</string>
-
+    <string name="myWriters">Escritors.</string>
 </resources>

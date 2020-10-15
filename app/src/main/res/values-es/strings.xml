@@ -1,2 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">Clase</string>
+    <!-- Strings for toolbar -->
+    <string name="action_settings">Ajustes</string>
+    <string name="action_buttons">Botones</string>
+    <string name="action_lists">Listas</string>
+    <string name="action_web">Sitios web</string>
+    <string name="alert_toast" >Selecionado: %s</string>
+    <string name="alert_dialog_radios">Elemento selecionado: %s</string>
+    <!-- Strings buttons activity -->
+    <string name="radio_man">Hombre</string>
+    <string name="radio_woman">Mujer</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Primer Fragmento</string>
+    <string name="second_fragment_label">Segundo Fragmento</string>
+    <string name="next">Siguiente</string>
+    <string name="previous">Anterior</string>
+
+    <string name="by_author">Por Joan Ciscar Gregori</string>
+    <string name="mainimage_contentdescription">Github</string>
+    <string name="myWriters">Escritores</string>
+</resources>

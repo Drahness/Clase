@@ -1,9 +1,11 @@
 package com.example.clase;
 
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 public class MainMenu extends AppCompatActivity {
     @Override
@@ -19,7 +21,7 @@ public class MainMenu extends AppCompatActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
+        System.out.println(findViewById(R.id.buttons_item));
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;

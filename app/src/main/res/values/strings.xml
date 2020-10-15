@@ -1,16 +1,47 @@
 <resources>
-    <string name="app_name">Clase</string>
+    <string name="app_name">Classroom</string>
+    <!-- Strings for toolbar -->
     <string name="action_settings">Settings</string>
+    <string name="action_buttons">Buttons</string>
+    <string name="action_lists">Lists</string>
+    <string name="action_web">Websites</string>
+
+    <!-- Strings buttons activity -->
+    <string name="buttons_switch" translatable="false">Switch</string>
+    <string name="radio_man">Man</string>
+    <string name="radio_woman">Woman</string>
+    <string name="buttons_toggle_button_off" translatable="false">Off</string>
+    <string name="buttons_toggle_button_on" translatable="false">On</string>
+    <string name="alert_toast">Selected: %s</string>
+    <string name="alert_dialog_radios">Current element selected: %s</string>
+
+    <string name="amazon" translatable="false">Amazon</string>
+    <string name="twitch" translatable="false">Twitch</string>
+
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
-    <string name="title">2 Android with menus Students project</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title" translatable="false">2 Android with menus Students project</string>
     <string name="by_author">By Joan Ciscar Gregori</string>
-    <string name="author">Joan Ciscar Gregori</string>
     <string name="mainimage_contentdescription">Github</string>
 
+    <string-array name="authors">
+        <item>Jaume Cabré</item>
+        <item>John Grisman</item>
+        <item>Santiago Posteguillo</item>
+        <item>George R.R. Martin</item>
+        <item>John R.R. Tolkien</item>
+    </string-array>
+    <string-array name="books">
+        <item>Senyoria</item>
+        <item>Rogue Lawyer</item>
+        <item>La traicion de Roma</item>
+        <item>Cancion de hielo y fuego</item>
+        <item>El hobbit</item>
+    </string-array>
+
+    <string name="myWriters">Writers and books</string>
 </resources>
