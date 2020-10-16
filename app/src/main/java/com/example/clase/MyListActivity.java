@@ -1,13 +1,11 @@
 package com.example.clase;
 
 import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
@@ -22,11 +20,7 @@ public class MyListActivity extends MainMenu {
     private static final String AUTHOR_TAG = "name";
     private String[] books;
     private String[] authors;
-    private int[] author_images;
     private int[] book_images;
-    private ListView list;
-
-    private SimpleAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +30,7 @@ public class MyListActivity extends MainMenu {
             Toolbar toolbar = findViewById(R.id.toolbar);
             setSupportActionBar(toolbar);
         }
-        list = (ListView) findViewById(R.id.list_view);
+        ListView list = (ListView) findViewById(R.id.list_view);
         // Get the resources
         authors = getResources().getStringArray(R.array.authors);
         books = getResources().getStringArray(R.array.books);
@@ -49,7 +43,7 @@ public class MyListActivity extends MainMenu {
         book_images[4] = R.drawable.rrtolkien_hobbit;
 
 
-        author_images = new int[authors.length];
+        int[] author_images = new int[authors.length];
         author_images[0] = R.drawable.jaume;
         author_images[1] = R.drawable.joegris;
         author_images[2] = R.drawable.posteguillo;
@@ -61,18 +55,18 @@ public class MyListActivity extends MainMenu {
         for (int i = 0 ;i < books.length ; i++) {
             Map<String,Object> map = new HashMap<>();
 
-            map.put("pic",author_images[i]);
+            map.put("pic", author_images[i]);
             map.put("name",authors[i]);
             arraylist.add(map);
         }
 
 
-        adapter = new SimpleAdapter(
+        SimpleAdapter adapter = new SimpleAdapter(
                 MyListActivity.this,
                 arraylist,
                 R.layout.item_list,
-                new String[]{PICTURE_TAG,AUTHOR_TAG},
-                new int[]{R.id.item_image,R.id.item_text});
+                new String[]{PICTURE_TAG, AUTHOR_TAG},
+                new int[]{R.id.item_image, R.id.item_text});
         list.setAdapter(adapter);
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

@@ -1,19 +1,13 @@
 package com.example.clase;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
-import android.view.ContextMenu;
-import android.view.MenuItem;
-import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MyWebsActivity extends MainMenu {
-    private WebView web;
     TextView tx;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +18,7 @@ public class MyWebsActivity extends MainMenu {
             Toolbar toolbar = findViewById(R.id.toolbar);
             setSupportActionBar(toolbar);
         }
-        web = (WebView) findViewById(R.id.web_view);
+        WebView web = (WebView) findViewById(R.id.web_view);
         web.setWebViewClient(new WebViewClient());
         web.getSettings().setJavaScriptEnabled(true);
         tx = findViewById(R.id.web_text);

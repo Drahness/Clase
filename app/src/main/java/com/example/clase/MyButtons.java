@@ -6,7 +6,6 @@ import androidx.appcompat.widget.Toolbar;
 import android.app.AlertDialog;
 import android.os.Build;
 import android.os.Bundle;
-import android.text.Layout;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.ImageButton;
@@ -15,8 +14,6 @@ import android.widget.RadioGroup;
 import android.widget.Switch;
 import android.widget.Toast;
 import android.widget.ToggleButton;
-
-import java.time.Duration;
 
 public class MyButtons extends MainMenu {
     int taps_on_OnOff_button = 0;
