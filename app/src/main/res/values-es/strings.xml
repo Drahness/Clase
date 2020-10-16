@@ -17,7 +17,7 @@
     <string name="second_fragment_label">Segundo Fragmento</string>
     <string name="next">Siguiente</string>
     <string name="previous">Anterior</string>
-
+    <string name="book">Libro:</string>
     <string name="by_author">Por Joan Ciscar Gregori</string>
     <string name="mainimage_contentdescription">Github</string>
     <string name="myWriters">Escritores</string>

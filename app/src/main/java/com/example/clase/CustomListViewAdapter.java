@@ -1,5 +1,7 @@
 package com.example.clase;
 
-public class CustomListViewAdapter extends ArrayAdapter<> {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class CustomListViewAdapter {
 
 }
