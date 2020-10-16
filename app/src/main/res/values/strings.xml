@@ -5,6 +5,7 @@
     <string name="action_buttons">Buttons</string>
     <string name="action_lists">Lists</string>
     <string name="action_web">Websites</string>
+    <string name="action_home">Home</string>
 
     <!-- Strings buttons activity -->
     <string name="buttons_switch" translatable="false">Switch</string>
@@ -17,6 +18,8 @@
 
     <string name="amazon" translatable="false">Amazon</string>
     <string name="twitch" translatable="false">Twitch</string>
+    <string name="amazon_URL" translatable="false">https://www.amazon.es</string>
+    <string name="twitch_URL" translatable="false">https://www.twitch.tv</string>
 
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>

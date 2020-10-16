@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.clase.MainActivity">
     <item
+        android:id="@+id/home_item"
+        android:title="@string/action_home" />
+    <item
         android:id="@+id/buttons_item"
         android:title="@string/action_buttons" />
     <item
@@ -18,7 +21,9 @@
                 android:title="@string/twitch" />
         </menu>
     </item>
-    <item android:title="@string/action_lists" />
+    <item
+        android:id="@+id/lists_item"
+        android:title="@string/action_lists" />
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"

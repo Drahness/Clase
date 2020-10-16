@@ -32,9 +32,10 @@ public class MyListActivity extends MainMenu {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_list);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
+        if(getActionBar() == null) {
+            Toolbar toolbar = findViewById(R.id.toolbar);
+            setSupportActionBar(toolbar);
+        }
         list = (ListView) findViewById(R.id.list_view);
         // Get the resources
         authors = getResources().getStringArray(R.array.authors);

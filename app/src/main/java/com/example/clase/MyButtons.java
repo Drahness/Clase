@@ -28,11 +28,12 @@ public class MyButtons extends MainMenu {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_my_buttons);
 
         setContentView(R.layout.activity_my_buttons);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        if(getActionBar() == null) {
+            Toolbar toolbar = findViewById(R.id.toolbar);
+            setSupportActionBar(toolbar);
+        }
         s = (Switch) findViewById(R.id.switch1);
         ib = (ImageButton) findViewById(R.id.imageButton);
         tb = (ToggleButton) findViewById(R.id.toggleButton);

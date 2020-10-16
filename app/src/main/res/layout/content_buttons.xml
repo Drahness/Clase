@@ -8,12 +8,12 @@
 
     <Switch
         android:id="@+id/switch1"
-        android:layout_width="94dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="56dp"
+        android:layout_width="143dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="92dp"
         android:text="@string/buttons_switch"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,6 +26,7 @@
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/toggleButton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/switch1"
         app:layout_constraintVertical_bias="1.0"
@@ -36,12 +37,12 @@
         android:id="@+id/toggleButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="72dp"
+        android:layout_marginBottom="20dp"
         android:text="@string/buttons_toggle_button_off"
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/radioGroup"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.458"
         app:layout_constraintStart_toStartOf="parent"
         tools:text="@string/buttons_toggle_button_off" />
 
@@ -49,7 +50,7 @@
         android:id="@+id/radioGroup"
         android:layout_width="279dp"
         android:layout_height="65dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="56dp"
         android:orientation="horizontal"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
