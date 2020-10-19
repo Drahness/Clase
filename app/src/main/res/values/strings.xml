@@ -6,7 +6,7 @@
     <string name="action_lists">Lists</string>
     <string name="action_web">Websites</string>
     <string name="action_home">Home</string>
-
+    <string name="action_notification">Notification</string>
     <!-- Strings buttons activity -->
     <string name="buttons_switch" translatable="false">Switch</string>
     <string name="radio_man">Man</string>
@@ -15,7 +15,11 @@
     <string name="buttons_toggle_button_on" translatable="false">On</string>
     <string name="alert_toast">Selected: %s</string>
     <string name="alert_dialog_radios">Current element selected: %s</string>
-
+    <string name="button_notification" translatable="false">Send notification.</string>
+    <string name="notification_title" translatable="false">2DAM notifications</string>
+    <string name="notification_content" translatable="false">Notification content here ...</string>
+    <string name="channel_name" translatable="false">Channel name</string>
+    <string name="channel_description" translatable="false">Channel description</string>
     <string name="amazon" translatable="false">Amazon</string>
     <string name="twitch" translatable="false">Twitch</string>
     <string name="amazon_URL" translatable="false">https://www.amazon.es</string>

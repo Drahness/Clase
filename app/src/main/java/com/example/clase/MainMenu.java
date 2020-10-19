@@ -57,6 +57,13 @@ public class MainMenu extends AppCompatActivity {
             startActivity(intent);
             return true;
         }
-        return super.onOptionsItemSelected(item);
+        else if(id == R.id.action_notification) {
+            Intent intent = new Intent(MainMenu.this, NotificationActivity.class);
+            startActivity(intent);
+            return true;
+        }
+        boolean returnValue = super.onOptionsItemSelected(item);
+        System.out.println(returnValue);
+        return returnValue;
     }
 }

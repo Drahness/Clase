@@ -6,6 +6,7 @@
     <string name="action_lists">Lista</string>
     <string name="action_web">Llocs web</string>
     <string name="action_home">Inici</string>
+    <string name="action_notification">Notificació</string>
     <string name="action_settings">Ajustos</string>
     <string name="alert_toast" >Selecionat: %s</string>
     <string name="alert_dialog_radios">Element selecionat: %s</string>
