@@ -32,5 +32,7 @@
         android:orderInCategory="100"
         android:title="@string/action_settings"
         app:showAsAction="never" />
-    <item android:title="Deletable List" />
+    <item
+        android:id="@+id/deletable_list"
+        android:title="Deletable List" />
 </menu>
