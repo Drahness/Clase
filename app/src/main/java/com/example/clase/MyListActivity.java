@@ -18,9 +18,13 @@ import java.util.Map;
 public class MyListActivity extends MainMenu {
     private static final String PICTURE_TAG = "pic";
     private static final String AUTHOR_TAG = "name";
-    private String[] books;
-    private String[] authors;
-    private int[] book_images;
+    protected String[] books;
+    protected String[] authors;
+    protected int[] book_images;
+    protected ListView list;
+    protected SimpleAdapter adapter;
+
+    protected List<Map<String,Object>> arraylist;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +34,7 @@ public class MyListActivity extends MainMenu {
             Toolbar toolbar = findViewById(R.id.toolbar);
             setSupportActionBar(toolbar);
         }
-        ListView list = (ListView) findViewById(R.id.list_view);
+        list = (ListView) findViewById(R.id.list_view);
         // Get the resources
         authors = getResources().getStringArray(R.array.authors);
         books = getResources().getStringArray(R.array.books);
@@ -50,7 +54,7 @@ public class MyListActivity extends MainMenu {
         author_images[3] = R.drawable.rrmartin;
         author_images[4] = R.drawable.rrtolkien;
 
-        List<Map<String,Object>> arraylist = new ArrayList<>();
+        arraylist = new ArrayList<>();
 
         for (int i = 0 ;i < books.length ; i++) {
             Map<String,Object> map = new HashMap<>();
@@ -61,7 +65,7 @@ public class MyListActivity extends MainMenu {
         }
 
 
-        SimpleAdapter adapter = new SimpleAdapter(
+        adapter = new SimpleAdapter(
                 MyListActivity.this,
                 arraylist,
                 R.layout.item_list,
